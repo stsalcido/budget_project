@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budget Expenses</title>
+  <link rel="stylesheet" href="./resources/css/style.css">
+  <script src="./js/index.js"defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Budget Expenses</h1>
+    <form id="budgetForm">
+      <div class="form-group">
+        <label for="startAmount">Starting Amount:</label>
+        <input type="number" id="startAmount" placeholder="Enter starting amount" required>
+      </div>
+      <div class="form-group">
+        <label for="week">Budget for a Week:</label>
+        <input type="number" id="week" placeholder="Enter budget for a week" required>
+      </div>
+      <div class="form-group">
+        <label for="month">Budget for a Month:</label>
+        <input type="number" id="month" placeholder="Enter budget for a month" required>
+      </div>
+      <div class="form-group">
+        <label for="year">Budget for a Year:</label>
+        <input type="number" id="year" placeholder="Enter budget for a year" required>
+      </div>
+      <input type="submit" value="Submit" id="submitButton">
+    </form>
+    <div id="resultSection" class="hidden">
+      <h2>Leftover Amount:</h2>
+      <p id="leftoverAmount"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
